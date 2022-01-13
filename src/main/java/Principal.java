@@ -21,6 +21,9 @@ public class Principal {
 		//Empezar la transaccion		
 		sesion.beginTransaction();
 		
+		sesion.save(jugador1);
+		sesion.save(jugador2);
+		
 		sesion.getTransaction().commit();
 		
 		
